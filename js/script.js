@@ -70,12 +70,10 @@ function checkLetter() {
   }
 }
 
-function game() {
+(function game() {
   const sentence = getRandomSentence(sentences);
 
   createKeyboard(alphabet);
   createSentence(sentence);
   checkLetter();
-}
-
-game();
+})();
